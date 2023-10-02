@@ -1,3 +1,7 @@
+/*  BASE DE DATOS */
+const db = require('../database/models');
+
+
 const fs = require('fs');
 const path = require('path');
 const { readJSON, writeJSON } = require('../data');
@@ -10,20 +14,27 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 const controller = {
 	// Root - Show all products
 	index: (req, res) => {
-		const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-		const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-		res.render('products',{
-			products,
-			toThousand
-		})	
+
+		db.Product.findAll()
+			.then(products => {
+				return res.render("products", {
+					products,
+					toThousand
+				})
+			})
+			.catch(error => console.log(error))
 	},
 	// Detail - Detail from one product
 	detail: (req, res) => {
-		const product = products.find(product => product.id === +req.params.id)
-		res.render('detail',{
-		...product,
-		toThousand
+
+		db.Product.findByPk(req.params.id)
+			.then(product => {
+				res.render('detail',{
+					...product.dataValues,
+					toThousand
+			})	
 		})
+		.catch(error => console.log(error))
 	},
 	// Create - Form to create
 	create: (req, res) => {

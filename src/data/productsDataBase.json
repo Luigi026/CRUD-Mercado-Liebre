@@ -54,15 +54,6 @@
       "category": "in-sale"
    },
    {
-      "id": 8,
-      "name": "Apple iPhone 11 Pro Dual SIM 256 GB",
-      "description": "¡El nuevo smartphone que lo tiene todo! Con este lanzamiento, Apple ha superado todos sus récords. Su diseño se destaca por sus líneas finas y distinguidas a partir de una sola hoja de vidrio resistente, combinada con aluminio de excelente calidad.",
-      "price": 148000,
-      "discount": 2,
-      "image": "img-iphone-11.jpg",
-      "category": "in-sale"
-   },
-   {
       "id": 9,
       "name": "Teclado Apple Magic Inalámbrico",
       "description": "El teclado mágico combina un diseño elegante con una batería recargable incorporada y funciones clave mejoradas. Con un mecanismo de tijera estable debajo de cada tecla, así como un recorrido de teclas optimizado y un perfil bajo, el Teclado Mágico ofrece una experiencia de escritura notablemente cómoda y precisa.",
@@ -115,23 +106,5 @@
       "discount": 5,
       "image": "img-sony-blueray.jpg",
       "category": "visited"
-   },
-   {
-      "id": 15,
-      "name": "",
-      "description": "Bicicleta Mountain Bike Fierce Rodado 29 21 velocidades. Tipo: Mountain Bike. Rodado: 29. Material Cuadro: Aluminio. Talle: 18. Suspensión: Delantera. Velocidades: 21 - Shimano. Sistema de Freno: Disco Mecánico. Llantas: Doble paredes.",
-      "price": 15979,
-      "discount": 12,
-      "image": "img-bicicleta-fierce.jpg",
-      "category": "visited"
-   },
-   {
-      "id": 16,
-      "name": "Sony Srs-xb12 Parlante Bluetooth Portátil",
-      "price": 4699,
-      "discount": 5,
-      "category": "in-sale",
-      "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ",
-      "image": "img-parlante-sony.jpg"
    }
 ]
